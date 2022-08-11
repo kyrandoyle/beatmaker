@@ -7,7 +7,6 @@
 body {
   font-family: sans-serif;
 }
-
 i,
 svg {
   pointer-events: none;
@@ -101,6 +100,31 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+.mute.active {
+  background: rgb(151, 149, 218);
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: blue;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.tempo p {
+  text-align: center;
+  margin: 2rem;
+  text-align: center;
 }
 
 @keyframes playTrack {
