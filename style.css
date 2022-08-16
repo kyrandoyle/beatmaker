@@ -76,7 +76,7 @@ svg {
   height: 3rem;
   width: 3rem;
   border: none;
-  background: aqua;
+  background: rgb(36, 90, 255);
   cursor: pointer;
   padding: 1rem;
   color: white;
@@ -92,7 +92,7 @@ svg {
   height: 3rem;
   font-size: 1.5rem;
   border: none;
-  background: rgb(70, 243, 243);
+  background: rgb(36, 90, 255);
   color: white;
   margin: 3rem;
   cursor: pointer;
@@ -114,4 +114,23 @@ select {
 
 .mute.active {
   background: rgb(177, 245, 245);
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: grey;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.tempo p {
+  font-size: 1.5rem;
+  text-align: center;
 }
