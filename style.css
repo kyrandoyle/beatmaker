@@ -3,15 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: sans-serif;
 }
+
 i,
 svg {
   pointer-events: none;
 }
-
 .kick-pad,
 .snare-pad,
 .hihat-pad {
@@ -20,25 +19,26 @@ svg {
   margin: 1rem 0.5rem;
   cursor: pointer;
 }
+
 .kick-pad {
-  background: rgb(166, 199, 248);
+  background: rgb(255, 151, 151);
 }
 .kick-pad.active {
-  background: rgb(46, 126, 246);
+  background: rgb(248, 30, 30);
 }
 
 .snare-pad {
-  background: rgb(169, 233, 247);
+  background: rgb(255, 215, 155);
 }
 .snare-pad.active {
-  background: rgb(66, 214, 247);
+  background: rgb(255, 174, 53);
 }
 
 .hihat-pad {
-  background: rgb(148, 167, 254);
+  background: rgb(202, 255, 133);
 }
 .hihat-pad.active {
-  background: rgb(51, 87, 246);
+  background: rgb(119, 255, 0);
 }
 
 .sequencer {
@@ -49,9 +49,9 @@ svg {
   justify-content: center;
 }
 
-.hihat-track,
+.kick-track,
 .snare-track,
-.kick-track {
+.hihat-track {
   display: flex;
   align-items: center;
   width: 70%;
@@ -64,7 +64,6 @@ svg {
 .hihat {
   display: flex;
 }
-
 .controls {
   display: flex;
   justify-content: space-between;
@@ -74,57 +73,34 @@ svg {
 }
 
 .controls button {
-  padding: 1rem;
+  height: 3rem;
+  width: 3rem;
   border: none;
-  background: rgb(46, 39, 165);
+  background: aqua;
+  cursor: pointer;
+  padding: 1rem;
   color: white;
   font-size: 1rem;
-  cursor: pointer;
   transition: all 0.5s ease;
 }
-
 .pad {
   transition: all 0.5s ease;
 }
-
 .play {
-  padding: 1rem 2rem;
+  padding: 1rem, 2rem;
+  width: 6rem;
+  height: 3rem;
   font-size: 1.5rem;
-  background: rgb(46, 39, 165);
-  color: white;
   border: none;
+  background: rgb(70, 243, 243);
+  color: white;
+  margin: 3rem;
   cursor: pointer;
-  margin-top: 3rem;
 }
-
 select {
   padding: 1rem;
   font-size: 1rem;
-}
-
-.mute.active {
-  background: rgb(151, 149, 218);
-}
-
-.tempo {
-  margin: 3rem;
-  width: 30%;
-}
-.tempo-slider {
-  padding: 0.2rem;
-  -webkit-appearance: none;
-  margin: 1rem 0rem;
-  width: 100%;
-  position: relative;
-  background: blue;
-  cursor: pointer;
-  border-radius: 0.5rem;
-}
-
-.tempo p {
-  text-align: center;
-  margin: 2rem;
-  text-align: center;
+  width: 10.5rem;
 }
 
 @keyframes playTrack {
@@ -134,4 +110,8 @@ select {
   to {
     transform: scale(1.2);
   }
+}
+
+.mute.active {
+  background: rgb(177, 245, 245);
 }
